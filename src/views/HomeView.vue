@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1>Projects Planner</h1>
+    <h1>Home</h1>
     <div v-for="project in projects" :key="project.id">
-      <SingleProject :project="project"></SingleProject>
+      <SingleProject :project="project" @delete="changeDate" @complete="completeProject"></SingleProject>
     </div>
   </div>
 </template>
@@ -18,6 +18,19 @@ export default {
   data(){
     return{
       projects:[]
+    }
+  },
+  methods:{
+    changeDate(id){
+      this.projects=this.projects.filter(project=>{
+        return project.id!=id;
+      })
+    },
+    completeProject(id){
+      let findProject=this.projects.find(project=>{
+        return project.id===id;
+      })
+      findProject.complete=!findProject.complete
     }
   },
   mounted(){
