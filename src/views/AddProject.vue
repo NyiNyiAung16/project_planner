@@ -5,7 +5,7 @@
     <input type="text" v-model="title"/>
     <label>Project Detail</label>
     <input type="text" v-model="detail">
-    <button>Add Project</button>
+    <button class="addProject">Add Project</button>
   </form>
 </template>
 
@@ -65,7 +65,7 @@ export default {
         width: 100%;
         background-color:  rgb(220, 216, 212);
     }
-    button{
+    .addProject{
         display: block;
         background-color: rgb(17, 232, 139);
         border: none;

@@ -2,21 +2,27 @@
   "projects": [
     {
       "id": 1,
-      "title": "Project title 1",
-      "detail": "Project detail 1",
-      "complete": false
+      "title": "Project title 1 update",
+      "detail": "Project detail 1 update",
+      "complete": true
     },
     {
       "id": 2,
       "title": "Project title 2",
       "detail": "Project detail 2",
-      "complete": false
+      "complete": true
     },
     {
-      "title": "project title 3",
-      "detail": "project detail 3",
-      "complete": false,
+      "title": "project title 3 ",
+      "detail": "project detail 3 ",
+      "complete": true,
       "id": 3
+    },
+    {
+      "title": "project title 4",
+      "detail": "project detail 4",
+      "complete": false,
+      "id": 4
     }
   ]
 }
